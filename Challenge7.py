@@ -8,7 +8,9 @@ print()
 print("#1")
 print("----------------")
 print()
-
+movies = ["The Walking Dead", "Entourage", "The Sopranos", "The Vampire Diaries"]
+for movie in movies:
+    print(movie)
 
 
 print()
@@ -18,6 +20,8 @@ print()
 print("#2")
 print("----------------")
 print()
+for i in range(25, 51):
+    print(i)
 
 
 
@@ -29,7 +33,9 @@ print()
 print("#3")
 print("----------------")
 print()
-
+movies = ["The Walking Dead", "Entourage", "The Sopranos", "The Vampire Diaries"]
+for index, movie in enumerate(movies):
+    print(index, " ", movie)
 
 
 
@@ -43,7 +49,20 @@ print("#4")
 print("----------------")
 print()
 
+numbers = [11,32,33,15,1]
 
+while True:
+    answer = input("Guess a number or type q to quit: ")
+    if answer == 'q':
+        break
+    try:
+        answer = int(answer)
+    except ValueError:
+        print("please type a number or q to quit: ")
+    if answer in numbers:
+        print("You guessed correctly!")
+    else:
+        print("You guessed incorrectly")
 
 
 
@@ -55,3 +74,11 @@ print()
 print("#5")
 print("----------------")
 print()
+
+list1 = [8, 19, 148, 4]
+list2 = [9, 1, 33, 83]
+products = []
+for i in list1:
+    for j in list2:
+        products.append(i * j)
+print(products)
