@@ -8,6 +8,12 @@ print("#1")
 print("----------------")
 print()
 
+import statistics
+data = [14,3,11,133,4]
+result1 = statistics.median_low(data)
+print(result1)
+
+
 
 print()
 print()
@@ -19,7 +25,13 @@ print("#2")
 print("----------------")
 print()
 
+import cubed
 
+a = input("enter a number: ")
+a = int(a)
+result = cubed.cube_it(a)
+print(result)
+    
 
 
 

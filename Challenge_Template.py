@@ -2,7 +2,7 @@
 
 print()
 print()
-# 
+# Call a different function from teh statistics module
 
 print("#1")
 print("----------------")
@@ -11,6 +11,8 @@ print()
 
 print()
 print()
+# Create a module named cubed with a function that takes a number
+# as a parameter, and returns the number cubed. Import and call
 # 
 
 print("#2")
@@ -20,35 +22,7 @@ print()
 
 
 
-print()
-print()
-# 
-
-print("#3")
-print("----------------")
-print()
 
 
-
-
-print()
-print()
-# 
-
-print("#4")
-print("----------------")
-print()
-
-
-
-
-
-print()
-print()
-# 
-
-print("#5")
-print("----------------")
-print()
 
 
