@@ -7,7 +7,14 @@ print()
 print("#1")
 print("----------------")
 print()
-
+with open("E:/Git/python_SelfTaughtBook/Chp9/HT.txt", "r") as Rr:
+    print(Rr.read())
+print()
+print()
+with open("E:/Git/python_SelfTaughtBook/Chp9/HT2.txt", "r") as Sr:
+    print(Sr.read())
+Sr.close    
+Rr.close
 
 print()
 print()
@@ -16,6 +23,12 @@ print()
 print("#2")
 print("----------------")
 print()
+
+Q1 = input("Enter a word: ")
+FO = open("E:/Git/python_SelfTaughtBook/Chp9/Writeit.txt", "w")
+FO.write(Q1)
+FO.close
+print("I wrote it")
 
 
 
@@ -29,6 +42,21 @@ print("#3")
 print("----------------")
 print()
 
+import csv
+ListToWrite = [["Top Gun", "Risky Business", "Minority Report"],
+    ["Titanic", "The Revenant", "Inception"], ["Training Day", "Man on Fire", "Flight"]]
 
+F1 = open("E:/Git/python_SelfTaughtBook/Chp9/Mylist.csv", "w")
+wr = csv.writer(F1, delimiter=",")
+for movie_list in ListToWrite:
+    wr.writerow(movie_list)
+F1.close
 
-
+print("----------------")
+print()
+F2 = open("E:/Git/python_SelfTaughtBook/Chp9/Mylist.csv", "r")
+r = csv.reader(F2, delimiter=",")
+for row in r:
+    print(",".join(row))
+    
+F2.close
