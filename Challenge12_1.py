@@ -26,7 +26,7 @@ App3 = Apple("Med", "Green", "Granny Smith", "Fall", 55)
 for p in range(1,3):
     p = str(p)
     j = "App" + p
-    j = str(j)
+    j = repr(j)
     print(j)
     print(j.size)
     print(j.color)
