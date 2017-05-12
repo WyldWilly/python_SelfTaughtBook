@@ -23,10 +23,12 @@ App1 = Apple("Med", "Red", "Red Delicious", "All", 20)
 App2 = Apple("Lrg", "Red Yellow", "Honey Crisp", "Fall", 55)
 App3 = Apple("Med", "Green", "Granny Smith", "Fall", 55)
 
-for p in range(1,3):
-    p = str(p)
-    j = "App" + p
-    j = repr(j)
+G = [App1, App2, App3]
+R = [".size", ".color", ".type", ".season", ".count"]
+
+# print("here is information about App2: "+ G[1].color)
+ 
+for j in G:
     print(j)
     print(j.size)
     print(j.color)
@@ -35,7 +37,3 @@ for p in range(1,3):
     print(j.count)
     print()
     print()
-
-
-
-
