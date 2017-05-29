@@ -14,7 +14,7 @@ import math
 
 #------ Methods -------------------------
 # Perimeter = side * 6
-def calculate_perimeter(side):
+def calc_per(side):
     A = side * 6
     return A    
 
@@ -35,7 +35,7 @@ List = [Hexa1, Hexa2, Hexa3, Hexa4, Hexa5]
 
 
 for T in List:
-    A = Hexagon(T.side)
+    A = calc_per(T.side)
     A = str(A)
     T = str(T)
     print("The perimeter of " + T + " is " + A)
